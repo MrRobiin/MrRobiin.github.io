@@ -1,3 +1,70 @@
-h1, p {
-    text-align: center;
+/* styles.css */
+
+body {
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.circle-frame {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Placera ramen absolut */
+    top: 100px; /* Justera avstånd från toppen */
+    left: 50%; /* Centrera horisontellt */
+    transform: translateX(-50%); /* Justera för absolut centering */
+}
+
+.circle-frame img {
+    position: absolute; /* Ändra positionering till absolut */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.circle-frame:hover img {
+    transform: scale(1.1);
+}
+
+/* Justera bildens position inom ramen */
+.position-top-left {
+    transform: translate(-10%, -10%);
+}
+
+.position-top-right {
+    transform: translate(-10%, 10%);
+}
+
+.position-bottom-left {
+    transform: translate(10%, -10%);
+}
+
+.position-bottom-right {
+    transform: translate(10%, 10%);
+}
+
+/* Exempel på en anpassad position */
+.position-custom {
+    transform: translate(0, 0); /* Anpassa detta efter behov */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    animation: spin 1s ease-in-out;
 }
