@@ -68,3 +68,9 @@ body {
 .spin {
     animation: spin 1s ease-in-out;
 }
+
+
+.welcome-text {
+    text-align: center;
+    margin-top: 330px;
+}
