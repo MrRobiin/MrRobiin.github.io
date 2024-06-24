@@ -1,8 +1,7 @@
-// script.js
 
 const image = document.getElementById('image');
 const faviconDiv = document.getElementById('favicon-div');
-const faviconImg = document.getElementById('favicon-img');
+const faviconIcon = document.getElementById('favicon-icon');
 const favicon = document.getElementById('favicon');
 
 image.addEventListener('dblclick', () => {
@@ -17,12 +16,14 @@ let isDarkMode = false;
 faviconDiv.addEventListener('click', () => {
     if (isDarkMode) {
         document.body.classList.remove('dark-mode');
-        faviconImg.src = 'img/sun.png';
-        favicon.href = 'sun.ico';
+        faviconIcon.classList.remove('fa-moon');
+        faviconIcon.classList.add('fa-sun');
+        favicon.href = 'img/sun.ico';
     } else {
         document.body.classList.add('dark-mode');
-        faviconImg.src = 'img/moon.png';
-        favicon.href = 'moon.ico';
+        faviconIcon.classList.remove('fa-sun');
+        faviconIcon.classList.add('fa-moon');
+        favicon.href = 'img/moon.ico';
     }
     isDarkMode = !isDarkMode;
 });

@@ -1,4 +1,3 @@
-/* styles.css */
 
 body {
     display: flex;
@@ -20,9 +19,18 @@ body.dark-mode {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 3px;
-    height: 3px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
+}
+
+.favicon-icon {
+    font-size: 32px;
+    color: #FFA500; /* Orange för solen */
+}
+
+body.dark-mode .favicon-icon {
+    color: #FFF; /* Vit för månen */
 }
 
 .container {
@@ -34,7 +42,6 @@ body.dark-mode {
     align-items: center;
 }
 
-
 .circle-frame {
     width: 200px;
     height: 200px;
@@ -44,14 +51,14 @@ body.dark-mode {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: absolute; /* Placera ramen absolut */
-    top: 100px; /* Justera avstånd från toppen */
-    left: 50%; /* Centrera horisontellt */
-    transform: translateX(-50%); /* Justera för absolut centering */
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .circle-frame img {
-    position: absolute; /* Ändra positionering till absolut */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -62,28 +69,6 @@ body.dark-mode {
 
 .circle-frame:hover img {
     transform: scale(1.1);
-}
-
-/* Justera bildens position inom ramen */
-.position-top-left {
-    transform: translate(-10%, -10%);
-}
-
-.position-top-right {
-    transform: translate(-10%, 10%);
-}
-
-.position-bottom-left {
-    transform: translate(10%, -10%);
-}
-
-.position-bottom-right {
-    transform: translate(10%, 10%);
-}
-
-/* Exempel på en anpassad position */
-.position-custom {
-    transform: translate(0, 0); /* Anpassa detta efter behov */
 }
 
 @keyframes spin {
@@ -99,7 +84,6 @@ body.dark-mode {
     animation: spin 1s ease-in-out;
 }
 
-
 .welcome-text {
     text-align: center;
     margin-top: 330px;
@@ -108,17 +92,15 @@ body.dark-mode {
 /*Button settings below 👇*/
 
 .button-container {
-    display: flex;
-    gap: 2px;
-    margin-left: px;
+    margin: auto;
+    gap: 16px;
 }
 
 .md3-button {
-    margin: auto;
     background-color: #6200ea;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 4px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -135,9 +117,12 @@ body.dark-mode {
 
 .md3-button:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(247, 231, 10, 0.891);
+    box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3);
 }
 
+/*body.dark-mode .md3-button {
+    background-color: #03dac6;
+}*/
 
 /* Länkar positionering */
 .link {
@@ -164,11 +149,4 @@ body.dark-mode {
 
 body.dark-mode .link {
     color: #fff;
-}
-
-.favicon-img {
-    height: 20px;
-    width: 20px;
-    background-color: #f5f5f5;
-    border-radius:20%;
 }
