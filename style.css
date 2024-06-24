@@ -85,8 +85,10 @@ body.dark-mode .favicon-icon {
 }
 
 .welcome-text {
+    margin: auto;
     text-align: center;
     margin-top: 330px;
+    font-family: "Roboto", sans-serif;
 }
 
 /*Button settings below 👇*/
@@ -97,27 +99,34 @@ body.dark-mode .favicon-icon {
 }
 
 .md3-button {
-    background-color: #6200ea;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin: 15px;
+    padding: 15px 25px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    color: #fff;
+    background-color: #08ba79;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 9px #7c18df;
 }
 
 .md3-button:hover {
-    background-color: #3700b3;
+    background-color: #08ba79ad;
 }
 
 .md3-button:active {
-    background-color: #03dac6;
+    background-color: #7c18df;
+    box-shadow: 0px 3px #0cde6e;
+    transform: translateY(4px);
 }
 
 .md3-button:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3);
 }
 
 /*body.dark-mode .md3-button {
