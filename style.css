@@ -98,7 +98,12 @@ body.dark-mode .favicon-icon {
     gap: 16px;
 }
 
-.md3-button {
+
+body.dark-mode .link {
+    color: #fff;
+}
+
+.dropbtn {
     margin: 15px;
     padding: 15px 25px;
     font-size: 24px;
@@ -110,52 +115,51 @@ body.dark-mode .favicon-icon {
     outline: none;
     color: #fff;
     background-color: #08ba79;
-    border: none;
-    border-radius: 15px;
+    border: solid 2px #a3eed2;
+    border-radius: 100px;
     box-shadow: 0px 9px #7c18df;
-}
-
-.md3-button:hover {
+  }
+  
+  .dropbtn:hover {
     background-color: #08ba79ad;
-}
+  }
 
-.md3-button:active {
-    background-color: #7c18df;
-    box-shadow: 0px 3px #0cde6e;
-    transform: translateY(4px);
-}
-
-.md3-button:focus {
+  .dropdown:focus {
     outline: none;
 }
 
-/*body.dark-mode .md3-button {
-    background-color: #03dac6;
-}*/
-
-/* Länkar positionering */
-.link {
+  .dropdown button:active {
+    background-color: #7c18df;
+    box-shadow: 0px 3px #0cde6e;
+    border-radius: 150px;
+    transform: translateY(4px);
+}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
     position: absolute;
-    font-size: 20px;
+    background-color: #08ba79;
+    border: solid 2px #a3eed2;
+    border-radius: 5px;
+    box-shadow: 0px 5px #7c18df;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 10px 16px;
     text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    background-color: #7c18df;
+    border-radius: 5px;
 }
-
-.about {
-    top: 10%;
-    left: -50px; /* Justera positionen efter behov */
-}
-
-.projects {
-    top: 10%;
-    right: -50px; /* Justera positionen efter behov */
-}
-
-.contact {
-    bottom: -30px; /* Justera positionen efter behov */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-body.dark-mode .link {
-    color: #fff;
-}
+  
+  .show {display: block;}

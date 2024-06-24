@@ -24,16 +24,31 @@
     
     <div class="welcome-text">
         <h1>Hello World</h1>
-        <p>I'm Robin.</p>
-        <p>I'm a self-taught Machine Learning Engineer.🫡</p>
+        <p>I'm Robin...</p>
+        <p>...I'm a self-taught Machine Learning Engineer.🫡</p>
     
     <div class="button-container">
-        <button class="md3-button">Projects</button>
-        <button class="md3-button">Contact</button>
-    </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Projects</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Colab</a>
+              <a href="https://github.com/MrRobiin" alt="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+            
+        <div class="dropdown">
+                
+            <button onclick="myFunctionTwo()" class="dropbtn">Contact </button>
+            <div id="myDropdownTwo" class="dropdown-content">
+                
+                <a href="#home"><i class="fa-regular fa-envelope"></i></a>
+                
+                <a href="https://www.linkedin.com/in/robin-olsson-8aa5aba5/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>  
+        
     
     <script src="script.js"></script>
-
     
 </body>
 </html>
