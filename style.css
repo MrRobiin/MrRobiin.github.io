@@ -163,3 +163,8 @@ body.dark-mode .link {
 }
   
   .show {display: block;}
+
+.colab-img {
+    width: 30px;
+    height: 20px;
+}
