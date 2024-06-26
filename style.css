@@ -142,6 +142,7 @@ body.dark-mode .link {
   
   .dropdown-content {
     display: none;
+    margin-left: 52px;
     position: absolute;
     background-color: #08ba79;
     border: solid 2px #a3eed2;
