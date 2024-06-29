@@ -113,47 +113,45 @@ body.dark-mode .link {
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #fff;
-    background-color: #08ba79;
-    border: solid 2px #a3eed2;
-    border-radius: 100px;
-    box-shadow: 0px 9px #7c18df;
+    color: #202020;
+    background-color: #f1f1f1;
+    border: solid 2px #767777;
+    border-radius: 20px;
+    box-shadow: 0px 9px #414141;
   }
   
-  .dropbtn:hover {
-    background-color: #08ba79ad;
-  }
-
-  .dropdown:focus {
+.dropdown:focus {
     outline: none;
 }
 
-  .dropdown button:active {
-    background-color: #7c18df;
-    box-shadow: 0px 3px #0cde6e;
-    border-radius: 150px;
+.dropdown button:active {
+    color: #202020;
+    background-color: #f1f1f1;
+    border: solid 2px #767777;
+    border-radius: 20px;
+    box-shadow: 0px 4px #414141;
     transform: translateY(4px);
     transition: transform .3s ease-out;
 }
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
   }
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     margin-left: 52px;
     margin-top: 12px;
     position: absolute;
-    background-color: #08ba79;
-    border: solid 2px #a3eed2;
+    background-color: #414141;
+    border: solid 2px #767777;
     border-radius: 5px;
-    box-shadow: 0px 5px 0px 0px #7c18df;
+    box-shadow: 0px 5px 0px 0px #414141;
     z-index: 1;
   }
   
-  .dropdown-content:after {
+.dropdown-content:after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -161,7 +159,7 @@ body.dark-mode .link {
 	width: 1px;
 	height: 1px;
 	border: 20px solid transparent;
-	border-bottom-color: #08ba79;
+	border-bottom-color: #414141;
 	border-top: 0;
 	border-left: 0;
 	margin-left: -10.5px;
@@ -171,23 +169,23 @@ body.dark-mode .link {
 }
 
 
-  .dropdown-content a {
+.dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 10px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown a:hover {
-    background-color: #7c18df;
+.dropdown a:hover {
+    background-color: rgb(106, 106, 106);
     border-radius: 5px;
 }
   
-  .show {display: block;}
+.show {display: block;}
 
 .colab-img {
     width: 30px;
-    height: 20px;
+    height: 18px;
 }
 
 /*cookie settings*/
@@ -195,7 +193,7 @@ body.dark-mode .link {
 .cookie-banner {
     bottom: 0;
     width: 50%;
-    background-color: #333;
+    background-color: #525252;
     color: white;
     text-align: center;
     padding: 7px;
@@ -209,8 +207,7 @@ body.dark-mode .link {
 
 .cookie-banner button {
     margin-left: 10px;
-    background-color: #4CAF50;
-    color: white;
+    color: rgb(152, 152, 152);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -226,23 +223,23 @@ body.dark-mode .link {
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #fff;
-    background-color: #08ba79;
-    border: solid 2px #a3eed2;
-    border-radius: 100px;
-    box-shadow: 0px 4px #7c18df;
+    color: #202020;
+    background-color: #f1f1f1;
+    border: solid 2px #767777;
+    border-radius: 10px;
+    box-shadow: 0px 9px #414141;
 }
 
 #acceptCookies:active {
-    background-color: #7c18df;
-    box-shadow: 0px 1px #0cde6e;
-    border-radius: 150px;
+    box-shadow: 0px 4px #414141;
+    border-radius: 10px;
     transform: translateY(4px);
     transition: transform .2s ease-out;
 }
 
 #acceptCookies:hover {
-    background-color: #08ba79ad;
+    background-color: #e4e4e4ad;
+    color: white;
 }
 
 .cookie-text {
