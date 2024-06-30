@@ -5,9 +5,10 @@ body {
     align-items: center;
     height: 100%;
     margin: 0;
-    background-color: #cecece;
+    background-color: #fdfdfd;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
+    transition: 0.1ms;
 }
 
 body.dark-mode {
@@ -57,6 +58,20 @@ body.dark-mode .favicon-icon {
     transform: translateX(-50%);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-one {
+    opacity: 0; /* Börjar som osynlig */
+    animation: fadeIn 2s forwards; /* Animerar över 2 sekunder */
+}
+
 .circle-frame img {
     position: absolute;
     top: 0;
@@ -93,11 +108,6 @@ body.dark-mode .favicon-icon {
 
 /*Button settings below 👇*/
 
-.button-container {
-    margin: auto;
-    gap: px;
-}
-
 
 body.dark-mode .link {
     color: #fff;
@@ -108,7 +118,7 @@ body.dark-mode .link {
     padding: 15px 25px;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
     cursor: pointer;
@@ -144,6 +154,7 @@ body.dark-mode .link {
     margin-left: 52px;
     margin-top: 12px;
     position: absolute;
+    text-align: center;
     background-color: #414141;
     border: solid 2px #767777;
     border-radius: 5px;
@@ -186,101 +197,4 @@ body.dark-mode .link {
 .colab-img {
     width: 30px;
     height: 18px;
-}
-
-/*cookie settings*/
-
-.cookie-banner {
-    bottom: 0;
-    width: 50%;
-    background-color: #525252;
-    color: white;
-    text-align: center;
-    padding: 7px;
-    display: none;
-    border-radius: 20px 20px 20px 0px;
-}
-
-.cookie-banner p {
-    margin: 0;
-}
-
-.cookie-banner button {
-    margin-left: 10px;
-    color: rgb(152, 152, 152);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#acceptCookies {
-    margin: 15px;
-    padding: 9px 15px;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #202020;
-    background-color: #f1f1f1;
-    border: solid 2px #767777;
-    border-radius: 10px;
-    box-shadow: 0px 9px #414141;
-}
-
-#acceptCookies:active {
-    box-shadow: 0px 4px #414141;
-    border-radius: 10px;
-    transform: translateY(4px);
-    transition: transform .2s ease-out;
-}
-
-#acceptCookies:hover {
-    background-color: #e4e4e4ad;
-    color: white;
-}
-
-.cookie-text {
-    
-    text-align: center;
-    font-family: "Roboto" sans-serif;
-    font-size: 12px;
-}
-
-
-#cookieBanner {
-    padding: 20px;
-    position: fixed;
-    bottom: 10px; /* Adjust if you want it closer or further from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: none;
-    z-index: 1000;
-}
-
-.collapsible {
-  background-color: #777;
-  display: block;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;  
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
 }
