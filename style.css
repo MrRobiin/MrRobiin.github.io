@@ -12,7 +12,7 @@ body {
 }
 
 body.dark-mode {
-    background: #000;
+    background: #292929;
     color: #fff;
 }
 
@@ -118,16 +118,16 @@ body.dark-mode .link {
     padding: 15px 25px;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #202020;
+    color: #0e0e0e;
     background-color: #f1f1f1;
     border: solid 2px #767777;
     border-radius: 20px;
-    box-shadow: 0px 9px #414141;
+    box-shadow: 0px 9px black;
   }
   
 .dropdown:focus {
